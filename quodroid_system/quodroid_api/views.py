@@ -16,4 +16,6 @@ def run_robot_test(request):
         suites_count = len(os.listdir(os.getcwd() + "\\quodroid_api\\test_suites"))
 
         return Response(serializer.data, status=status.HTTP_200_OK)
-    return Response(serializer.data, status=status.HTTP_400_BAD_REQUEST)
+    else:
+        # steps are mandatory
+        return Response("Incorrect data format", status=status.HTTP_400_BAD_REQUEST)
