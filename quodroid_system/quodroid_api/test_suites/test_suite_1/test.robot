@@ -10,5 +10,5 @@ Open google.com
    Go To  url=https://google.com
 
 Open yahoo.com
-   Open Browser  browser=chrome
+   Open Browser  browser=edge
    Go To  url=https://yahoo.com
