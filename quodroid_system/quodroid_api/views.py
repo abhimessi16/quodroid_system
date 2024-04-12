@@ -33,7 +33,12 @@ Library  SeleniumLibrary
         tests = serializer.data.get("tests", [])
 
         for test in tests:
-            test_case = f"""\n\n{test.get("title", "Test Case")}"""
+
+            title = test.get("title", "New Test Case")
+            if len(title) == 0:
+                title = "New Test Case"
+            test_case = f"""\n\n{title}"""
+
 
             test_steps = test.get("steps", [])
 
@@ -44,8 +49,6 @@ Library  SeleniumLibrary
             
         with open(f"{new_testfile_name}.robot", 'w') as robot_suite:
             robot_suite.write(suite_content)
-        
-        print(test_suites_location)
         
         os.system(f'robot -d {new_suite_name} {new_testfile_name}.robot')
 
