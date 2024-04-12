@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.2 on win32)" generated="2024-04-13T00:40:10.159637" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="D:\Python\quodroid_system\quodroid_system\quodroid_api\test_suites\test_suite_1\test.robot">
+<test id="s1-t1" name="Open google.com" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-13T00:40:10.554346" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-13T00:40:10.554346" elapsed="2.116949"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-13T00:40:12.672295" level="INFO">Opening url 'https://google.com'</msg>
+<arg>url=https://google.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-13T00:40:12.672295" elapsed="1.839271"/>
+</kw>
+<status status="PASS" start="2024-04-13T00:40:10.552054" elapsed="3.963509"/>
+</test>
+<test id="s1-t2" name="Open yahoo.com" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-13T00:40:14.519562" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-13T00:40:14.519562" elapsed="2.079680"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-13T00:40:16.600289" level="INFO">Opening url 'https://yahoo.com'</msg>
+<arg>url=https://yahoo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-13T00:40:16.600289" elapsed="3.340247"/>
+</kw>
+<status status="PASS" start="2024-04-13T00:40:14.518562" elapsed="5.421974"/>
+</test>
+<status status="PASS" start="2024-04-13T00:40:10.163633" elapsed="9.778903"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
